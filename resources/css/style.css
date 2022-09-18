@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap'); /* noto sans */
+@import url('reset.css');
+
+.las_app_wrap {max-width:64rem;margin:0 auto;}
+
+.las_main_head {position:relative;background:url(../img/img_main_top.png) 0 0 no-repeat;background-size:cover;height:77rem;}
+.las_main_head_deal {position:absolute;bottom:2rem;left:2rem;right:2rem;height:44rem;background-color:#fff;padding:19px;box-sizing:border-box;}
+.las_main_head_deal h3 {position:relative;text-align:center;margin-top:1.5rem;padding:1.5rem 0 2.5rem 0;}
+.las_main_head_deal h3:before {content:"";position:absolute;top:0;left:50%;margin-left:-1.3rem;width:2.6rem;height:2px;background-color:#227271;}
+.las_main_head_deal h3 strong {font-size:3rem;letter-spacing:.3rem;font-weight:700;}
+.las_main_head_deal a {position:absolute;top:21px;right:0;color:#35201b;border:1px solid #000;width:3.2rem;height:3.2rem;line-height:3.0rem;text-align:center;font-size:2rem;letter-spacing:0;}
+.las_main_head_deal a:hover {background-color:#000;color:#fff;}
+.las_main_head_deal .deal_list {display:flex;}
+.las_main_head_deal .deal_item {position:relative;margin:0 0.1rem;cursor:pointer;}
+.las_main_head_deal .deal_item .car_info {position:absolute;top:1rem;left:1rem;right:1rem;color:#fff;z-index:1;}
+.las_main_head_deal .deal_item .car_info strong {display:block;font-size:1.8rem;}
+.las_main_head_deal .deal_item .car_info span {display:block;font-size:1.3rem;}
+.las_main_head_deal .deal_item .item_top img {max-width:100%;transition:filter .3s;}
+.las_main_head_deal .deal_item:hover .item_top img {filter: contrast(150%);}
+.las_main_head_deal .deal_item .item_btm {background-color:#000;padding:1rem 1rem 1.3rem 1rem;color:#fff;text-align:center;}
+.las_main_head_deal .deal_item .item_btm strong {display:block;font-size:2rem;}
+.las_main_head_deal .deal_item .item_btm span {display:block;font-size:1.5rem;color:#999999;}
+
+.las_main_hot_car {padding:2rem 2rem 4rem 2rem;}
+
+.las_main_hot_car h3 {position:relative;text-align:center;margin-top:1.5rem;padding:1.5rem 0 2.5rem 0;}
+.las_main_hot_car h3:before {content:"";position:absolute;top:0;left:50%;margin-left:-1.3rem;width:2.6rem;height:2px;background-color:#227271;}
+.las_main_hot_car h3 strong {font-size:3rem;letter-spacing:.3rem;font-weight:700;}
+
+.las_main_hot_car .list_tab {display:flex;width:100%;}
+.las_main_hot_car .list_tab .tab_item {flex:1;background-color:#b4babf;color:#fff;text-align:center;line-height:6rem;cursor:pointer;font-size:2rem;transition:all .3s;}
+.las_main_hot_car .list_tab .tab_item:hover {background-color:#91969a;}
+.las_main_hot_car .list_tab .tab_item:first-child {margin-left:0;margin-right:1px;}
+.las_main_hot_car .list_tab .tab_item:last-child {margin-left:1px;margin-right:0;}
+.las_main_hot_car .list_tab .tab_item.active {background-color:#35201b;}
+
+.las_hot_list {display:flex;flex-wrap:wrap;}
+.las_hot_item {border:1px solid #999;width:49%;margin-top:1.5rem;padding:2rem;box-sizing:border-box;transition:all .3s;}
+.las_hot_item:nth-child(odd) {margin-right:1%;}
+.las_hot_item:nth-child(even) {margin-left:1%;}
+.las_hot_item:hover {border-color:#227271;}
+.las_hot_item .deal_badge {height:2rem;}
+.las_hot_item .deal_badge span {display:inline-block;padding:.3rem .5rem;font-size:1.2rem;color:#fff;font-weight:500;}
+.las_hot_item .deal_badge span.sale {background-color:#227271;}
+.las_hot_item .deal_badge span.direct {background-color:#b78127;}
+.las_hot_item .car_name {margin-top:1rem;}
+.las_hot_item .car_name strong {display:block;font-size:1.8rem;}
+.las_hot_item .car_name span {display:block;font-size:1.3rem;}
+.las_hot_item .car_img {line-height:14rem;font-size:0;text-align:center;}
+.las_hot_item .car_img img {max-width:70%;vertical-align:middle;}
+.las_hot_item .car_option {text-align:center;color:#777;font-size:1.4rem;}
+.las_hot_item .car_price {text-align:center;color:#227271;font-size:1.6rem;font-style:italic;font-weight:500;margin-top:1rem;}
+.las_hot_item .car_price strong {display:inline-block;padding:0 1rem;font-size:2.4rem;font-weight:600;}
+.las_hot_item .las_hot_btn {margin-top:1.5rem;color:#000;border:1px solid #000;line-height:4rem;text-align:center;font-size:1.8rem;font-weight:600;letter-spacing:0;cursor:pointer;transition:all .3s;}
+.las_hot_item .las_hot_btn:hover {background-color:#227271;border-color:#227271;color:#fff;}
+
+.las_main_find_car {background-image:url(../img/find_car.png);background-size:cover;min-height:35rem;padding-top:2rem;box-sizing:border-box;}
+.las_main_find_car.direct {margin-bottom:8rem;}
+
+.las_main_find_car h3 {position:relative;text-align:center;margin-top:1rem;padding:1rem 0 1rem 0;}
+.las_main_find_car h3:before {content:"";position:absolute;top:0;left:50%;margin-left:-1.3rem;width:2.6rem;height:2px;background-color:#fff;}
+.las_main_find_car h3 strong {font-size:3rem;letter-spacing:.3rem;font-weight:700;color:#2b9d9c;}
+.las_main_find_car p {color:#fff;text-align:center;font-size:1.6rem;}
+.las_main_find_car .find_car_btn {width:24rem;height:5rem;line-height:5rem;background-color:#2b9d9c;color:#fff;text-align:center;font-size:2rem;margin:2rem auto 0 auto;cursor:pointer;}
+.las_main_find_car .find_car_btn:hover {background-color:#227271;}
+
+.las_main_direct_search {position:relative;padding:6rem 2rem;display:flex;align-items:center;}
+.las_main_direct_search .direct_img {flex:1;}
+.las_main_direct_search .direct_img img {max-width:100%;}
+.las_main_direct_search .direct_text {display:inline-flex;flex:1;padding-left:2rem;flex-direction: column;justify-content: space-between;height:22rem;}
+.las_main_direct_search .direct_text h4 {flex:1;}
+.las_main_direct_search .direct_text h4 strong {display:block;font-size:2.8rem;color:#685b48;font-weight:500;}
+.las_main_direct_search .direct_text h4 span {display:block;font-size:1.8rem;font-weight:500;color:#666;}
+.las_main_direct_search .direct_text .direct_btn {flex:0;height:5rem;text-align:center;font-size:2rem;border:1px solid #000;line-height:5rem;}
+
+.las_footer {background-color:#383838;color:#cbcbcb;padding:2rem 2rem 15rem 2rem;}
+.las_footer p {font-size:1.4rem;}
+.las_footer a {color:#cbcbcb;}
+.las_footer a:hover {color:#2b9d9c;}
+.las_footer .copylight {font-size:1.6rem;margin-top:2rem;}
+
+.las_bar {position:fixed;bottom:0;left:0;right:0;height:13rem;background:url(../img/bar_bg.png) 100% 100% repeat-x;align-items:flex-end;background-size:100% 100%;z-index:10;display:flex;justify-content:space-around;max-width:64rem;margin:0 auto;}
+.las_bar .bar_item {cursor:pointer;}
+.las_bar .bar_item .bar_icon {display:block;width:7rem;height:7rem;background:url(../img/bar_direct.png) 0 0 no-repeat;background-size:100%;margin:0 auto;}
+.las_bar .bar_item .bar_icon.chat {background-image:url(../img/bar_chat.png);}
+.las_bar .bar_item .bar_icon.hotdeal {background-image:url(../img/bar_hotdeal.png);}
+.las_bar .bar_item .bar_icon.estimate {background-image:url(../img/bar_estimate.png);}
+.las_bar .bar_item span {display:block;font-size:1.5rem;padding-bottom:2.7rem;text-align:center;font-weight:600;color:#227271;}
+
+.las_header {position:relative;height:10rem;background-color:#2e2e2e;color:#fff;text-align:center;line-height:10rem;z-index:1;}
+.las_header strong {font-size:3.6rem;font-weight:600;}
+.header_btn {position:absolute;top:0;width:10rem;height:10rem;line-height:10rem;text-align:center;z-index:2;}
+.header_btn.left {left:0;}
+.header_btn .header_icon {display:inline-block;width:6rem;height:6rem;background:url(../img/header_icon_home.png) 50% 50% no-repeat;background-size:100%;vertical-align:middle;}
+
+.las_direct_head {text-align:center;padding:3rem 2rem 5rem 2rem;font-size:2.2rem;}
+.las_direct_list {padding:2rem 2rem 5rem 2rem;}
+.las_direct_list .direct_update {color:#777;font-size:2rem;}
+.las_direct_list .direct_item {position:relative;border:2px solid #eae8e8;transition:all .3s;display:flex;align-items:center;padding:1.5rem;margin-top:2rem;}
+.las_direct_list .direct_item:hover {border-color:#227271;}
+.las_direct_list .direct_item .item_tag {position:absolute;top:1.5rem;left:1.5rem;}
+.las_direct_list .direct_item .item_tag span {display:inline-block;padding:.1rem .5rem .2rem .5rem;border:1px solid #000;margin-right:.5rem;font-size:1.2rem;font-weight:500;}
+.las_direct_list .direct_item .item_img {width:20rem;text-align:center;padding-right:1.5rem;box-sizing:border-box;}
+.las_direct_list .direct_item .item_img img {width:80%;}
+.las_direct_list .direct_item .item_info {flex:1;}
+.las_direct_list .direct_item .item_info .car_name {font-size:2.4rem;color:#685b48;font-weight:600;}
+.las_direct_list .direct_item .item_info .car_trim {font-size:1.8rem;}
+.las_direct_list .direct_item .item_info .car_price {font-size:2rem;margin-top:.5rem;}
+.las_direct_list .direct_item .item_info .car_price span {color:#777;}
+.las_direct_list .direct_item .item_info .car_date {font-size:2rem;color:#227271;font-weight:600;}
+.las_direct_list .direct_item .item_info .item_btn {margin-top:1rem;width:5rem;height:5rem;background:url(../img/direct_btn.png) 0 0 no-repeat;background-size:100%;cursor:pointer;}
+.las_direct_list .direct_item .item_info .item_btn:hover {background-image:url(../img/direct_btn_o.png);}
+
+.las_hotdeal_head {text-align:center;padding:3rem 2rem 5rem 2rem;font-size:2.2rem;}
+.las_hotdeal_list {padding:2rem 0 5rem 0;}
+.las_hotdeal_list .hotdeal_item {position:relative;border-bottom:1px solid #afafaf;transition:all .3s;display:flex;align-items:flex-start;padding:1.5rem;}
+.las_hotdeal_list .hotdeal_item:first-child {border-top:1px solid #afafaf;}
+.las_hotdeal_list .hotdeal_item:hover {background-color:#f2f2f2;}
+.las_hotdeal_list .hotdeal_item .item_img {width:24rem;text-align:center;padding-right:1rem;box-sizing:border-box;}
+.las_hotdeal_list .hotdeal_item .item_img img {width:100%;}
+.las_hotdeal_list .hotdeal_item .item_info {flex:1;}
+.las_hotdeal_list .hotdeal_item .item_info .car_name {font-size:2.4rem;color:#685b48;font-weight:600;}
+.las_hotdeal_list .hotdeal_item .item_info .car_info {font-size:1.8rem;line-height:3rem;}
+.las_hotdeal_list .hotdeal_item .item_info .car_info span {color:#777;}
+.las_hotdeal_list .hotdeal_item .item_info .car_info.primary,
+.las_hotdeal_list .hotdeal_item .item_info .car_info.primary span {color:#227271;font-weight:600;}
+
+.las_hotdeal_list .hotdeal_item .item_info .item_btn {position:absolute;top:2rem;right:2rem;margin-top:1rem;width:5rem;height:5rem;background:url(../img/hotdeal_btn.png) 0 0 no-repeat;background-size:100%;cursor:pointer;}
+.las_hotdeal_list .hotdeal_item .item_info .item_btn:hover {background-image:url(../img/direct_btn_o.png);}
+
+
+.las_popup {position:fixed;top:0;left:0;right:0;max-width:64rem;margin:0 auto;}
+
+
+@media screen and (max-width: 1100px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    html {font-size:10px;}
+    .las_app_wrap,
+    .las_bar {max-width:100%;}
+}
+
+@media screen and (max-width: 520px) {
+    html {font-size:9px;}
+    .las_app_wrap,
+    .las_bar {max-width:100%;}
+}
+
+@media screen and (max-width: 480px) {
+    html {font-size:8px;}
+    .las_app_wrap {max-width:100%;}
+}
+
+@media screen and (max-width: 440px) {
+    html {font-size:7px;}
+    .las_app_wrap {max-width:100%;}
+    .las_bar .bar_item span {padding-bottom:2.6rem;}
+}
+
+@media screen and (max-width: 400px) {
+    html {font-size:6px;}
+    .las_app_wrap {max-width:100%;}
+    .las_bar .bar_item span {padding-bottom:2.4rem;}
+}
+
+@media screen and (max-width: 320px) {
+    html {font-size:5px;}
+}
