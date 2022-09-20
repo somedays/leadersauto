@@ -11,7 +11,7 @@
 .las_main_head_deal a {position:absolute;top:21px;right:0;color:#35201b;border:1px solid #000;width:3.2rem;height:3.2rem;line-height:3.0rem;text-align:center;font-size:2rem;letter-spacing:0;}
 .las_main_head_deal a:hover {background-color:#000;color:#fff;}
 .las_main_head_deal .deal_list {display:flex;}
-.las_main_head_deal .deal_item {position:relative;margin:0 0.1rem;cursor:pointer;}
+.las_main_head_deal .deal_item {position:relative;margin:0 0.1rem;cursor:pointer;max-width:34%;}
 .las_main_head_deal .deal_item .car_info {position:absolute;top:1rem;left:1rem;right:1rem;color:#fff;z-index:1;}
 .las_main_head_deal .deal_item .car_info strong {display:block;font-size:1.8rem;}
 .las_main_head_deal .deal_item .car_info span {display:block;font-size:1.3rem;}
@@ -85,7 +85,7 @@
 .las_bar .bar_item .bar_icon.chat {background-image:url(../img/bar_chat.png);}
 .las_bar .bar_item .bar_icon.hotdeal {background-image:url(../img/bar_hotdeal.png);}
 .las_bar .bar_item .bar_icon.estimate {background-image:url(../img/bar_estimate.png);}
-.las_bar .bar_item span {display:block;font-size:1.5rem;padding-bottom:2.7rem;text-align:center;font-weight:600;color:#298f8e;}
+.las_bar .bar_item span {display:block;font-size:1.5rem;padding-bottom:2.8rem;text-align:center;font-weight:600;color:#298f8e;}
 
 .las_header {position:relative;height:10rem;background-color:#2e2e2e;color:#fff;text-align:center;line-height:10rem;z-index:1;}
 .las_header strong {font-size:3.6rem;font-weight:600;}
