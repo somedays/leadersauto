@@ -137,6 +137,7 @@
 .las_pop_body {position:relative;background-color:#fff;overflow:auto;padding:2rem 2rem 10rem 2rem;box-sizing:border-box;z-index:2;}
 .las_pop_msg {text-align:center;padding:3rem 2rem 5rem 2rem;font-size:2.2rem;}
 .las_pop_tt {font-size:3.6rem;padding:2rem 2rem 4rem 2rem;color:#685b48;font-weight:600;text-align:center;}
+.las_pop_text {font-size:1.5rem;padding:2rem 2rem 4rem 2rem;color:#a3a3a3;}
 
 
 
@@ -251,9 +252,13 @@
 .las_guide .hotdeal_price div {font-size:2.7rem;font-weight:500;}
 .las_guide .hotdeal_price div strong {color:#298f8e;font-weight:600;display:inline-block;padding:0 .5rem;}
 .las_guide.hotdeal p {color:#685b48;font-size:1.8rem;padding:0 2rem 2rem 2rem;}
+.las_guide.car_detail p {color:#685b48;font-size:1.8rem;padding:0 2rem 2rem 2rem;}
+.las_guide.car_detail p:nth-child(1) {padding-top:4rem;}
+.las_guide.car_detail p:nth-child(2) {padding-bottom:4rem;}
 .las_guide .guide_price {display:flex;align-items:center;justify-content:center;}
 .las_guide .guide_price div {display:block;padding:2rem 3rem 1rem 3rem;}
 .las_guide .guide_price div:first-child {border-right:1px dashed #565451;text-align:right;}
+.las_guide .guide_price div:only-child {border-right:0 none;}
 .las_guide .guide_price div span {font-size:1.6rem;display:block;color:#685b48;}
 .las_guide .guide_price div strong {font-size:2.4rem;display:block;color:#685b48;}
 .las_guide .guide_price div strong > span {font-size:2.4rem;color:#298f8e;font-weight:600;display:inline-block;padding-right:.5rem;}
