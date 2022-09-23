@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 /*css reset*/
 html, body, div, span, applet, object, iframe,
@@ -21,7 +22,7 @@ time, mark, audio, video, button, textarea,input,select {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 html {font-size:10px;}
 /* HTML5 display-role reset for older browsers */
