@@ -2,6 +2,14 @@
 
 body {background-color:#110c0b;}
 .las_pc_left {position:fixed;top:70px;left:50%;margin-left:-564px;width:453px;height:931px;background:url(../img/pc_left_img.png) 0 0 no-repeat;}
+.las_pc_btns {position:absolute;top:500px;left:65px;display:flex;flex-direction:column;box-sizing:border-box;}
+.las_pc_btns a {display:block;width:235px;height:60px;border:1px solid #227271;color:#fff;font-size:2.4rem;line-height:56px;padding-left:25px;margin-top:15px;box-sizing:border-box;transition:all .3s;}
+.las_pc_btns a:hover {background-color:#227271;}
+.las_pc_btns a span {display:inline-block;vertical-align:middle;padding-left:10px;}
+.las_pc_btns .pc_icon {display:inline-block;width:36px;height:36px;background-repeat:no-repeat;background-position:0 0;vertical-align:middle;}
+.las_pc_btns .pc_icon.tel {background-image:url(../img/pc_icon_tel.png);}
+.las_pc_btns .pc_icon.note {background-image:url(../img/pc_icon_note.png);}
+
 
 .las_app {position:fixed;top:0;left:50%;right:0;bottom:0;height:100vh;overflow:auto;margin-left:-111px;}
 .las_app_wrap {max-width:64rem;background-color:#fff;}
