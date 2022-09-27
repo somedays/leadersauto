@@ -84,19 +84,19 @@ body {background-color:#110c0b;}
 .las_main_direct_search .direct_text h4 span {display:block;font-size:1.8rem;font-weight:500;color:#666;}
 .las_main_direct_search .direct_text .direct_btn {flex:0;height:5rem;text-align:center;font-size:2rem;border:1px solid #000;line-height:5rem;}
 
-.las_footer {background-color:#383838;color:#cbcbcb;padding:2rem 2rem 15rem 2rem;}
+.las_footer {background-color:#383838;color:#cbcbcb;padding:2rem 2rem 30rem 2rem;}
 .las_footer p {font-size:1.4rem;}
 .las_footer a {color:#cbcbcb;}
 .las_footer a:hover {color:#2b9d9c;}
 .las_footer .copylight {font-size:1.6rem;margin-top:2rem;}
 
-.las_bar {position:fixed;bottom:0;left:50%;right:0;height:13rem;background:url(../img/bar_bg.png) 100% 100% repeat-x;align-items:flex-end;background-size:100% 100%;z-index:10;display:flex;justify-content:space-around;width:64rem;margin:0 0 0 -111px;}
-.las_bar .bar_item {cursor:pointer;}
-.las_bar .bar_item .bar_icon {display:block;width:7rem;height:7rem;background:url(../img/bar_direct.png) 0 0 no-repeat;background-size:100%;margin:0 auto;}
+.las_bar {position:fixed;bottom:0;left:50%;right:0;height:22.8rem;background:url(../img/app_bar.png) 0 0 no-repeat;align-items:center;background-size:100%;z-index:10;display:flex;justify-content:space-around;width:64rem;margin:0 0 0 -111px;}
+.las_bar .bar_item {cursor:pointer;width:12rem;height:16rem;}
+/* .las_bar .bar_item .bar_icon {display:block;width:7rem;height:7rem;background:url(../img/bar_direct.png) 0 0 no-repeat;background-size:100%;margin:0 auto;}
 .las_bar .bar_item .bar_icon.chat {background-image:url(../img/bar_chat.png);}
 .las_bar .bar_item .bar_icon.hotdeal {background-image:url(../img/bar_hotdeal.png);}
 .las_bar .bar_item .bar_icon.estimate {background-image:url(../img/bar_estimate.png);}
-.las_bar .bar_item span {display:block;font-size:1.5rem;padding-bottom:2.7rem;text-align:center;font-weight:600;color:#298f8e;}
+.las_bar .bar_item span {display:block;font-size:1.5rem;padding-bottom:2.7rem;text-align:center;font-weight:600;color:#298f8e;} */
 
 .las_header {position:relative;height:10rem;background-color:#2e2e2e;color:#fff;text-align:center;line-height:10rem;z-index:1;}
 .las_header strong {font-size:3.6rem;font-weight:600;}
@@ -296,18 +296,19 @@ body {background-color:#110c0b;}
 @media screen and (max-width: 640px) {
     html {font-size:10px;}
     .las_app_wrap,
-    .las_bar {max-width:100%;}
+    .las_bar {width:100%;}
+    .las_bar {height:20rem;}
 }
 
 @media screen and (max-width: 520px) {
     html {font-size:9px;}
     .las_app_wrap,
-    .las_bar {max-width:100%;}
+    .las_bar {width:100%;}
 }
 
 @media screen and (max-width: 480px) {
     html {font-size:8px;}
-    .las_app_wrap {max-width:100%;}
+    .las_app_wrap {width:100%;}
 }
 
 @media screen and (max-width: 440px) {
