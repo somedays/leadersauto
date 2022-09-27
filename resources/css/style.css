@@ -92,11 +92,11 @@ body {background-color:#110c0b;}
 
 .las_bar {position:fixed;bottom:0;left:50%;right:0;height:22.8rem;background:url(../img/app_bar.png) 0 0 no-repeat;align-items:center;background-size:100%;z-index:10;display:flex;justify-content:space-around;width:64rem;margin:0 0 0 -111px;}
 .las_bar .bar_item {cursor:pointer;width:12rem;height:16rem;}
-/* .las_bar .bar_item .bar_icon {display:block;width:7rem;height:7rem;background:url(../img/bar_direct.png) 0 0 no-repeat;background-size:100%;margin:0 auto;}
+.las_bar .bar_item .bar_icon {display:none;width:7rem;height:7rem;background:url(../img/bar_direct.png) 0 0 no-repeat;background-size:100%;margin:0 auto;}
 .las_bar .bar_item .bar_icon.chat {background-image:url(../img/bar_chat.png);}
 .las_bar .bar_item .bar_icon.hotdeal {background-image:url(../img/bar_hotdeal.png);}
 .las_bar .bar_item .bar_icon.estimate {background-image:url(../img/bar_estimate.png);}
-.las_bar .bar_item span {display:block;font-size:1.5rem;padding-bottom:2.7rem;text-align:center;font-weight:600;color:#298f8e;} */
+.las_bar .bar_item span {display:none;font-size:1.5rem;padding-bottom:2.7rem;text-align:center;font-weight:600;color:#298f8e;}
 
 .las_header {position:relative;height:10rem;background-color:#2e2e2e;color:#fff;text-align:center;line-height:10rem;z-index:1;}
 .las_header strong {font-size:3.6rem;font-weight:600;}
