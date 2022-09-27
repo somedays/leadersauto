@@ -12,7 +12,7 @@ body {background-color:#110c0b;}
 .las_pc_btns .pc_icon.note {background-image:url(../img/pc_icon_note.png);}
 
 
-.las_app {position:fixed;top:0;left:50%;right:0;bottom:0;height:100vh;overflow:auto;margin-left:-111px;}
+.las_app {position:fixed;top:0;left:50%;right:0;bottom:0;height:100%;overflow:auto;margin-left:-111px;box-sizing:border-box;max-height:100vh;}
 .las_app_wrap {max-width:64rem;background-color:#fff;}
 .las_main_head {position:relative;background:url(../img/img_main_top.png) 0 0 no-repeat;background-size:cover;height:77rem;}
 .las_main_head_deal {position:absolute;bottom:2rem;left:2rem;right:2rem;height:44rem;background-color:#fff;padding:19px;box-sizing:border-box;}
@@ -83,7 +83,8 @@ body {background-color:#110c0b;}
 .las_main_direct_search .direct_text h4 {flex:1;}
 .las_main_direct_search .direct_text h4 strong {display:block;font-size:2.8rem;color:#685b48;font-weight:500;}
 .las_main_direct_search .direct_text h4 span {display:block;font-size:1.8rem;font-weight:500;color:#666;}
-.las_main_direct_search .direct_text .direct_btn {flex:0;height:5rem;text-align:center;font-size:2rem;border:1px solid #000;line-height:5rem;}
+.las_main_direct_search .direct_text .direct_btn {flex:0;height:5rem;text-align:center;font-size:2rem;border:1px solid #000;line-height:5rem;cursor:pointer;transition:all .3s;}
+.las_main_direct_search .direct_text .direct_btn:hover {border-color:#227271;color:#227271;}
 
 .las_footer {background-color:#383838;color:#cbcbcb;padding:2rem 2rem 30rem 2rem;}
 .las_footer p {font-size:1.4rem;}
