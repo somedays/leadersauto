@@ -172,9 +172,9 @@ body {background-color:#110c0b;}
 
 .las_form {padding:0 1rem;}
 .las_form .form_item {display:flex;margin-top:1rem;align-items:center;}
-.las_form .form_item label {width:13rem;font-size:2.4rem;display:block;color:#777777;}
+.las_form .form_item label {width:13rem;font-size:2.4rem;display:block;color:#777777;flex:0 0 13rem;}
 .las_form .form_item input,
-.las_form .form_item select {flex:1;border:1px solid #333333;color:#333;font-size:2.4rem;height:6rem;padding:0 1.5rem;box-sizing:border-box;font-weight:500;}
+.las_form .form_item select {flex:1;border:1px solid #333333;color:#333;font-size:2.4rem;height:6rem;padding:0 1.5rem;box-sizing:border-box;font-weight:500;border-radius:0;width:100%;}
 .las_form .form_item select {color:#c7c7c7;appearance:none;background:url(../img/select_arrow.png) 100% 50% no-repeat;background-size:auto 100%;}
 .las_form .form_item input:focus,
 .las_form .form_item select:focus {border-color:#298f8e;}
@@ -184,7 +184,7 @@ body {background-color:#110c0b;}
 .las_form .form_policy a {display:inline-block;color:#298f8e;margin-left:5px;}
 .las_form .form_policy a:hover {text-decoration:underline;}
 .las_form .form_btns {text-align:center;margin:5rem 0 7rem 0;}
-.las_form .form_btns .form_btn {display:inline-block;min-width:22rem;height:6rem;margin:0 1rem;padding:1rem 5rem 1.2rem 5rem;background-color:#298f8e;font-size:2.4rem;color:#fff;border-radius:1.5rem;box-sizing:border-box;vertical-align:middle;}
+.las_form .form_btns .form_btn {display:inline-block;min-width:22rem;height:6rem;margin:0 1rem;line-height:6rem;padding:0 5rem;background-color:#298f8e;font-size:2.4rem;color:#fff;border-radius:1.5rem;box-sizing:border-box;vertical-align:middle;}
 .las_form .form_btns .form_btn:hover {background-color:#2b9d9c;}
 .las_form .form_btns .form_btn.plain {background-color:#fff;border:2px solid #298f8e;color:#298f8e;font-weight:600;}
 .las_form .form_btns .form_btn.plain:hover {background-color:#fff;border-color:#2b9d9c;color:#2b9d9c;}
@@ -291,10 +291,13 @@ body {background-color:#110c0b;}
   .las_pc_left  {display:none;}
   .las_bar {left:auto;right:auto;margin:0 auto;}
   .las_popup {position:relative;left:auto;right:auto;width:64rem;margin:0 auto;}
+  .las_popup:before {left:0;right:0;width:100%;height:100vh;margin:0;max-width:100%;}
 }
 
 @media screen and (max-width: 640px) {
     html {font-size:10px;}
+    .las_app {width:100%;}
+    .las_popup {width:100%;}
     .las_app_wrap,
     .las_bar {width:100%;}
     .las_bar {height:20rem;}
