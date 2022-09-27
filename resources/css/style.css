@@ -298,8 +298,8 @@ body {background-color:#110c0b;}
 
 @media screen and (max-width: 640px) {
     html {font-size:10px;}
-    .las_app {width:100%;height: 100vh;height: -webkit-fill-available;height: fill-available;}
-    .las_popup {width:100%;max-height:100vh;max-height:-webkit-fill-available;}
+    .las_app {width:100%;height: 100vh;height: -webkit-fill-available;height:fill-available;}
+    .las_popup {width:100%;max-height:100vh;max-height:-webkit-fill-available;max-height:fill-available;}
     .las_app_wrap,
     .las_bar {width:100%;}
     .las_bar {height:20rem;}
