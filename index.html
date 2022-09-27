@@ -23,7 +23,7 @@
                 <div class="bar_item" onclick="location.href='direct.html'"></div><!-- 즉시출고 -->
                 <div class="bar_item"></div><!-- 채팅상담 -->
                 <div class="bar_item" onclick="location.href='hotdeal.html'"></div><!-- 핫딜 -->
-                <div class="bar_item"></div><!-- 견적 문의 -->
+                <div class="bar_item" onclick="$('.las_popup.contract').addClass('on');$('body').addClass('lock')"></div><!-- 견적 문의 -->
             </div>
             <div class="las_main_head">
                 <div class="las_main_head_deal">
@@ -176,11 +176,11 @@
     </div>
 </div>
 <!-- 견적 문의 -->
-<div class="las_popup on">
+<div class="las_popup contract">
     <div class="las_pop_warp">
         <div class="las_header">
             <strong>견적문의</strong>
-            <a href="index.html" title="Home" class="header_btn right"><i class="header_icon close"></i></a>
+            <a href="javascript:void(0);" title="Home" class="header_btn right"><i class="header_icon close"></i></a>
         </div>
         <div class="las_pop_body">
             <div class="las_pop_msg">국산/수입 모든 브랜드의 차종을 취급하는<br>리더스 오토 솔루션에서<br>희망하시는 차량을 빠르게 찾아드립니다.</div>
@@ -436,6 +436,16 @@
         </div>
     </div>
 </div>
+<script
+  src="https://www.smartdirectcar.com/renewalresources/js/jquery-2.2.4.min.js"></script>
+<script>
+let contractPop = $('.las_popup.contract');
+let closeBtn = $('.header_btn');
 
+closeBtn.click(function(){
+    contractPop.removeClass('on');
+});
+
+</script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 @import url('reset.css');
 
 body {background-color:#110c0b;}
+.lock {overflow:hidden;}
 .las_pc_left {position:fixed;top:70px;left:50%;margin-left:-564px;width:453px;height:931px;background:url(../img/pc_left_img.png) 0 0 no-repeat;}
 .las_pc_btns {position:absolute;top:500px;left:65px;display:flex;flex-direction:column;box-sizing:border-box;}
 .las_pc_btns a {display:block;width:235px;height:60px;border:1px solid #227271;color:#fff;font-size:2.4rem;line-height:56px;padding-left:25px;margin-top:15px;box-sizing:border-box;transition:all .3s;}
