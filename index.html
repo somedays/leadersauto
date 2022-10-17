@@ -10,27 +10,20 @@
 <body>
 <div class="wrap">
     <div class="las_pc_left">
-        <div class="las_pc_img"></div>
+        <div class="las_pc_img">
+            <div class="las_pc_btns">
+                <a href=""><i class="pc_icon tel"></i><span>1544-1969</span></a>
+                <a href=""><i class="pc_icon note"></i><span>견적상담</span></a>
+            </div>
+        </div>
     </div>
     <div class="las_app">
         <div class="las_app_wrap">
             <div class="las_bar">
-                <div class="bar_item" onclick="location.href='direct.html'">
-                    <i class="bar_icon direct"></i>
-                    <span>즉시출고</span>
-                </div>
-                <div class="bar_item">
-                    <i class="bar_icon chat"></i>
-                    <span>채팅상담</span>
-                </div>
-                <div class="bar_item" onclick="location.href='hotdeal.html'">
-                    <i class="bar_icon hotdeal"></i>
-                    <span>핫딜</span>
-                </div>
-                <div class="bar_item">
-                    <i class="bar_icon estimate"></i>
-                    <span>견적문의</span>
-                </div>
+                <div class="bar_item" onclick="location.href='direct.html'"></div><!-- 즉시출고 -->
+                <div class="bar_item"></div><!-- 채팅상담 -->
+                <div class="bar_item" onclick="location.href='hotdeal.html'"></div><!-- 핫딜 -->
+                <div class="bar_item" onclick="$('.las_popup.contract').addClass('on');$('body').addClass('lock')"></div><!-- 견적 문의 -->
             </div>
             <div class="las_main_head">
                 <div class="las_main_head_deal">
@@ -183,11 +176,11 @@
     </div>
 </div>
 <!-- 견적 문의 -->
-<div class="las_popup">
+<div class="las_popup contract">
     <div class="las_pop_warp">
         <div class="las_header">
             <strong>견적문의</strong>
-            <a href="index.html" title="Home" class="header_btn right"><i class="header_icon close"></i></a>
+            <a href="javascript:void(0);" title="Home" class="header_btn right"><i class="header_icon close"></i></a>
         </div>
         <div class="las_pop_body">
             <div class="las_pop_msg">국산/수입 모든 브랜드의 차종을 취급하는<br>리더스 오토 솔루션에서<br>희망하시는 차량을 빠르게 찾아드립니다.</div>
@@ -443,6 +436,16 @@
         </div>
     </div>
 </div>
+<script
+  src="https://www.smartdirectcar.com/renewalresources/js/jquery-2.2.4.min.js"></script>
+<script>
+let contractPop = $('.las_popup.contract');
+let closeBtn = $('.header_btn');
 
+closeBtn.click(function(){
+    contractPop.removeClass('on');
+});
+
+</script>
 </body>
 </html>
